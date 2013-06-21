@@ -1,0 +1,252 @@
+html
+{
+	background-color: #7F7F7F;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 436px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	padding-bottom: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFFFFF url("../images/background2.jpg") no-repeat center center;
+}
+
+#u71
+{
+	z-index: 2;
+	width: 757px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.41);
+	-moz-border-radius: 21px;
+	-webkit-border-radius: 21px;
+	-khtml-border-radius: 21px;
+	border-radius: 21px;
+	padding-bottom: 0px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 73px;
+	left: 101px;
+	-pie-background: rgba(255, 255, 255, 0.41);
+}
+
+#u71_position_content
+{
+	margin-top: -7px;
+	margin-bottom: 86px;
+}
+
+#u73
+{
+	z-index: 3;
+	width: 757px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	-moz-border-radius: 15px 15px 0px 0px ;
+	-webkit-border-radius: 15px 15px 0px 0px ;
+	-khtml-border-radius: 15px 15px 0px 0px ;
+	border-radius: 15px 15px 0px 0px ;
+	padding-bottom: 32px;
+	left: -1px;
+	position: relative;
+}
+
+#u74-5
+{
+	z-index: 4;
+	display: block;
+	vertical-align: top;
+	position: relative;
+	width: 213px;
+	margin-right: -10000px;
+	margin-top: 13px;
+	left: 104px;
+}
+
+#u83
+{
+	z-index: 10;
+	width: 439px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	margin-left: 132px;
+	margin-top: 82px;
+	position: relative;
+	padding: 10px 39px 29px 9px;
+}
+
+#u83:hover
+{
+	background-color: #FFFFFF;
+	width: 439px;
+	min-height: 0px;
+	margin: 82px 0px 0px 132px;
+}
+
+#u84-4
+{
+	z-index: 11;
+	width: 408px;
+	min-height: 45px;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 31px;
+	position: relative;
+}
+
+#pu206-4
+{
+	width: 0.01px;
+	margin-left: 24px;
+	margin-top: 12px;
+	position: relative;
+}
+
+#u206-4
+{
+	z-index: 17;
+	width: 112px;
+	min-height: 24px;
+	font-size: 18px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u200
+{
+	z-index: 15;
+	width: 205px;
+	min-height: 24px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #058787;
+	background-color: transparent;
+	margin-bottom: -2px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -2px;
+	left: 137px;
+}
+
+#pu207-4
+{
+	width: 0.01px;
+	margin-top: 31px;
+	position: relative;
+}
+
+#u207-4
+{
+	z-index: 21;
+	width: 142px;
+	font-size: 18px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u204
+{
+	z-index: 16;
+	width: 205px;
+	min-height: 22px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #01A0A0;
+	background-color: transparent;
+	margin-bottom: -2px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -2px;
+	left: 161px;
+}
+
+#u212-4
+{
+	z-index: 25;
+	width: 121px;
+	min-height: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FBB03B;
+	background-color: #000000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	text-indent: 4px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1;
+	color: #FFFFFF;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-weight: bold;
+	margin-left: 306px;
+	margin-top: 30px;
+	position: relative;
+}
+
+#u212-4:hover
+{
+	border-color: #000000;
+	background-color: #248EBC;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 24px;
+	width: 121px;
+	margin: 30px 0px 0px 306px;
+}
+
+#u212-4:hover p
+{
+	color: #000000;
+	visibility: inherit;
+}
+
+#u212-2
+{
+	padding-left: 1px;
+	padding-top: 6px;
+}
+
+#u76
+{
+	z-index: 9;
+	width: 80px;
+	height: 63px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	-moz-border-radius: 15px 0px 0px 0px ;
+	-webkit-border-radius: 15px 0px 0px 0px ;
+	-khtml-border-radius: 15px 0px 0px 0px ;
+	border-radius: 15px 0px 0px 0px ;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 73px;
+	left: 101px;
+	background: transparent url("../images/925-calavera-con-huesos-u76-fr.jpg") no-repeat center center;
+	background-size: cover !important;
+}
+
+body
+{
+	padding-top: 35px;
+	padding-bottom: 36px;
+}
+

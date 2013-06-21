@@ -1,0 +1,17 @@
+<manifest alg="2" build="8" opt="false">
+  <folder name="css">
+    <file name="site_global.css" crc="89652228"/>
+    <file name="index.css" crc="185556888" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4076886207" ref="index"/>
+    <file name="pie.js" crc="4067523484" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="background2.jpg" crc="130821072" ref="index"/>
+    <file name="u74-5.png" crc="252558971" ref="index"/>
+    <file name="925-calavera-con-huesos-u76-fr.jpg" crc="93657527" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4230958595" mt="1371184438153"/>
+</manifest>
