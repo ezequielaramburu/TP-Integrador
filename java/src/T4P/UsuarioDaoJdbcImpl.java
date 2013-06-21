@@ -124,14 +124,14 @@ public class UsuarioDaoJdbcImpl implements UsuarioDao  {
 	
 	@Override
 	public Usuario findById(String idUsuario) throws PersistenceException {
-		if (idUsuario == null) {
+		if (idUsuario.equals("")) {
 			throw new IllegalArgumentException(
 					"El id de persona no debe ser nulo");
 		}
 		Usuario usuario = null;
 		try {
 			Connection c = ConnectionProvider.getInstance().getConnection();
-			String query = "select * from persona where id = ?";
+			String query = "select * from persona where IdUsuario = ?";
 			java.sql.PreparedStatement statement = c.prepareStatement(query);
 			statement.setString(1, idUsuario);
 			ResultSet resultSet = statement.executeQuery();
