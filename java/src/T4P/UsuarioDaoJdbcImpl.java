@@ -1,7 +1,9 @@
 package T4P;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedList;
 import java.util.List;
 
 public class UsuarioDaoJdbcImpl implements UsuarioDao  {
@@ -86,8 +88,30 @@ public class UsuarioDaoJdbcImpl implements UsuarioDao  {
 	
 	@Override
 	public List<Usuario> findAll() throws PersistenceException {
-		// TODO Auto-generated method stub
-		return null;
+		List<Usuario> lista = new LinkedList<Usuario>();
+		try {
+			String query = "select * from usuario";
+			java.sql.PreparedStatement statement = ConnectionProvider.getInstance()
+					.getConnection().prepareStatement(query);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				lista.add(convertOne(resultSet));
+			}
+		} catch (SQLException sqlException) {
+			throw new PersistenceException(sqlException);
+		}
+		return lista;
+	}
+	
+	private Usuario convertOne(ResultSet resultSet) throws SQLException {
+		Usuario retorno = new Usuario();
+
+		retorno.setIdUsuario(resultSet.getString("IdUsuario"));
+		retorno.setContrasenia(resultSet.getString("contrasenia"));
+		retorno.setNombre(resultSet.getString("nombre"));
+		retorno.setApellido(resultSet.getString("apellido"));
+
+		return retorno;
 	}
 
 	public static UsuarioDao getInstance() {
@@ -96,6 +120,28 @@ public class UsuarioDaoJdbcImpl implements UsuarioDao  {
 
 	public static void setInstance(UsuarioDao instance) {
 		UsuarioDaoJdbcImpl.instance = instance;
+	}
+	
+	@Override
+	public Usuario findById(String idUsuario) throws PersistenceException {
+		if (idUsuario == null) {
+			throw new IllegalArgumentException(
+					"El id de persona no debe ser nulo");
+		}
+		Usuario usuario = null;
+		try {
+			Connection c = ConnectionProvider.getInstance().getConnection();
+			String query = "select * from persona where id = ?";
+			java.sql.PreparedStatement statement = c.prepareStatement(query);
+			statement.setString(1, idUsuario);
+			ResultSet resultSet = statement.executeQuery();
+			if (resultSet.next()) {
+				usuario = convertOne(resultSet);
+			}
+		} catch (SQLException sqlException) {
+			throw new PersistenceException(sqlException);
+		}
+		return usuario;
 	}
 
 }
