@@ -29,7 +29,7 @@ public class usuarioDaoTest {
 	
 	private Usuario buildUsuario(String IdUsuario, String contrasenia, String nombre, String apellido) {
 		Persona usuario = new Usuario();
-		persona.setId(IdUsuario);
+		persona.setIdUsuario(IdUsuario);
 		persona.setEdad(contrasenia);
 		persona.setNombre(nombre);
 		persona.setApellido(apellido);
@@ -49,7 +49,7 @@ public class usuarioDaoTest {
 	@Test
 	public void testQueSePuedeBuscarUnaPersona() throws PersistenceException {
 
-		Persona personaEncontrada = dao.findById(cosmeFulanito.getId());
+		Usuario personaEncontrada = dao.findById(cosmeFulanito.getIdUsuario());
 
 		assertNotNull("la persona con id 1 debe existir", personaEncontrada);
 		assertEquals("la persona 1 tiene nombre: Cosme", "Cosme", personaEncontrada.getApellido());
